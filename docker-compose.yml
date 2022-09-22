@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  v_main:
+    build: .
+    container_name: v_startup
+    stdin_open: true
+    tty: true
+    ports:
+      - "5173:5173"
+    volumes:
+      - "./app:/vue3-boilerplate"
+    
